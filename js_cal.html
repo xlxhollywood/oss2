@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+function add() {
+      // 입력 필드에서 값을 가져옵니다.
+      let operand1 = parseFloat(document.getElementsByClassName('operand')[0].value);
+      let operand2 = parseFloat(document.getElementsByClassName('operand')[1].value);
+      
+      // 두 값을 더합니다.
+      let result = operand1 + operand2;
+      
+      // 결과를 'answer' 필드에 표시합니다.
+      document.getElementById('answer').value = result;
+    }
+
+
+  </script>
+</head>
+<body>
+
+  <input type="text" class="operand" size="3" > +
+  <input type="text" class="operand" size="3" > 
+
+  <button onclick="add()">=</button>
+
+  <input type="text" id="answer" size="3" readonly>
+  <br><br>
+  <button onclick="add()">초기화</button>
+  
+
+</body>
+</html>

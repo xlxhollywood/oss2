@@ -4,8 +4,435 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+
+    .container {
+      margin-top: -30px;
+      max-width: 960px;
+      /* background-color: antiquewhite; */
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      height: 1000px;
+    
+    }
+
+    header {
+      margin-bottom: -40px;
+    }
+
+    .text-center {
+    text-align: center !important;
+    }
+
+    .py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    }
+
+    .contents {
+      display: flex;
+      flex-wrap: wrap;
+      }
+
+    .lead {
+    margin-top: -20px;
+    font-size: 1.25rem;
+    
+    line-height: 30px;
+    }
+
+    #checkout {
+      font-size: calc(1.325rem + .9vw);
+      font-weight: 500;
+      line-height: 1.2;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+
+    p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    }
+
+    p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    }
+
+  .contents{
+    display: flex;
+    max-width: 960px;
+
+  }
+  
+  .red {
+    /* background-color: red; */
+    padding-left: 15px;
+    flex:2;
+  }
+
+  .blue {
+    /* background-color: blue; */
+    flex:1;
+  }
+
+  #billing_address{
+    margin-bottom: -3px;
+    width: 481.08;
+    height: 27.66;
+    font-weight: 600;
+    font-size: 25px;
+    display: block;
+  }
+
+  label {
+    display: block;
+    cursor: default;
+    margin-bottom: .5rem;
+  }
+
+  #first_flex {
+    width: 100%;
+    display: flex;
+  }
+  
+  .left_first {    
+    /* background-color: aqua; */
+    flex: 1;
+  }
+
+  .left_second {
+    /* background-color: skyblue; */
+    flex: 1;
+  }
+
+  .form-control#firstName {
+    display: block;
+    width: 85%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .form-control#lastName {
+    display: block;
+    width: 85%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  #second_left {
+    width: 100%;
+    display: flex;
+    
+  }
+
+  .form-control#username {
+    display: block;
+    width: 86%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .form-control#email {
+    display: block;
+    width: 93%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .form-control#address{
+    display: block;
+    width: 93%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .form-control#address2{
+    display: block;
+    width: 93%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  .input-group-text {
+    display: flex;
+    width: 15px;
+    align-items: center;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .375rem;
+}
+
+#sixth_left {
+  display: flex;
+  
+}
+#sixth_left_first {
+  
+  flex:2.4;
+}
+#sixth_left_second {
+  flex:1.8;
+}
+#sixth_left_third {
+  flex:1.2;
+}
+
+.form-select#country {
+    display: block;
+    width: 90%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-image: url('/Users/pro/github-classroom/2024OSS/assignment-2-1-form-css-js-rwd-xlxhollywood/다운로드.svg');
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+
+.form-select {
+    display: block;
+    width: 80%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-image: url('/Users/pro/github-classroom/2024OSS/assignment-2-1-form-css-js-rwd-xlxhollywood/다운로드.svg');
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .form-control#zip {
+    display: block;
+    width: 70%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+.form-label {
+  margin-top: 23px;
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #6c757d !important;
+}
+  </style>
 </head>
-<body>
-  <div>hi</div>
+<body class="bg-light">
+  <div class="container">
+    <main>
+      <header class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h2 id="checkout">Checkout form</h2>
+      <p class="lead">Below is an example form built 
+        entirely with Bootstrap’s form controls. 
+        Each required form group has <br> a validation 
+        state that can be triggered by attempting 
+        to submit the form without completing it.
+      </p>
+      </header>
+
+      
+      <div class="contents">
+        <div class="red">
+          <h4 id="billing_address">Billing address</h4>
+        <form class="needs-validation" novalidate>
+
+
+          <div id="first_flex">
+            <div class="left_first">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName"  placeholder value required>
+            </div>
+            <div class="left_second">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder value required>
+            </div>
+          </div>
+
+
+          <label for="username" class="form-label">Username</label>
+          <div id="second_left">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
+          </div>
+          
+
+          <label for="email" class="form-label">Email
+            <span class="text-muted">(Optional)</span>
+          </label>
+          <div id="third_left">
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          </div>
+
+          
+          <label for="address" class="form-label">Address</label>
+          <div id="forth_left">
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          </div>
+
+
+          <label for="address2" class="form-label">Address 2
+            <span class="text-muted">(Optional)</span>
+          </label>
+          <div id="fifth_left">
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+          
+
+          <div id="sixth_left">
+            <div id="sixth_left_first">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required="">
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+            </div>    
+
+
+            <div id="sixth_left_second">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required="">
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+            </div>
+
+
+            <div id="sixth_left_third">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder required>
+            </div>
+          </div>
+
+
+          <hr></hr>
+          <div>Shipping address is the same as my billing address</div>
+          <div>Save this information for next time</div>
+          <hr></hr>
+        </form>  
+        </div>
+        <div class="blue"></div>
+      </div>
+
+  </div>
+    </main>
+    
+      
+      </div>
+      <div class="right"> </div>
+    </div>
+  </div>
+
 </body>
 </html>

@@ -18,6 +18,12 @@ function add() {
       document.getElementById('answer').value = result;
     }
 
+  function resetFields() {
+      // 모든 입력 필드의 값을 초기화합니다.
+      document.getElementsByClassName('operand')[0].value = '';
+      document.getElementsByClassName('operand')[1].value = '';
+      document.getElementById('answer').value = '';
+    }
 
   </script>
 </head>
@@ -29,8 +35,8 @@ function add() {
   <button onclick="add()">=</button>
 
   <input type="text" id="answer" size="3" readonly>
-  <br><br>
-  <button onclick="add()">초기화</button>
+  <br>
+  <button onclick="resetFields()">초기화</button>
   
 
 </body>

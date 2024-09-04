@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<body class="bg-light">
+  <div class="container">
+    <main>
+      <header class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+      <h2 id="checkout">Checkout form</h2>
+      <p class="lead">Below is an example form built 
+        entirely with Bootstrap’s form controls. 
+        Each required form group has <br> a validation 
+        state that can be triggered by attempting 
+        to submit the form without completing it.
+      </p>
+      </header>
+
+      
+      <div class="contents">
+        <div class="red">
+          <h4 id="billing_address">Billing address</h4>
+        <div class="needs-validation" novalidate>
+
+
+          <div id="first_flex">
+            <div class="left_first">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName"  placeholder value required>
+            </div>
+            <div class="left_second">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder value required>
+            </div>
+          </div>
+
+
+          <label for="username" class="form-label">Username</label>
+          <div id="second_left">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
+          </div>
+          
+
+          <label for="email" class="form-label">Email
+            <span class="text-muted">(Optional)</span>
+          </label>
+          <div id="third_left">
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          </div>
+
+          
+          <label for="address" class="form-label">Address</label>
+          <div id="forth_left">
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          </div>
+
+
+          <label for="address2" class="form-label">Address 2
+            <span class="text-muted">(Optional)</span>
+          </label>
+          <div id="fifth_left">
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+          
+
+          <div id="sixth_left">
+            <div id="sixth_left_first">
+              <label for="country" class="form-label">Country</label>
+              <select class="form-select" id="country" required="">
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+            </div>    
+
+            
+            <div id="sixth_left_second">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required="">
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+            </div>
+
+
+            <div id="sixth_left_third">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder required>
+            </div>
+          </div>
+
+
+          <hr></div>
+          <div class="hr1"><input type="checkbox" class="form-check-input" id="same-address">  Shipping address is the same as my billing address</div>
+          <div class="hr1"><input type="checkbox" class="form-check-input" id="same-address">  Save this information for next time</div>
+          <hr></hr>
+
+          <div class="footer">
+          <h4 id="payment">Payment</h4>
+          
+          <div class="form-check">
+            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+            <label class="form-check-label" for="credit">Credit card</label>
+          </div>
+
+          <div class="form-check">
+            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+            <label class="form-check-label" for="debit">Debit card</label>
+          </div>
+          <div class="form-check">
+            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" checked required>
+            <label class="form-check-label" for="paypal">Paypal</label>
+          </div>
+
+          <div id="last_flex">
+            <div class="left_first">
+            <label for="cc_name" class="form-label">Name on card</label>
+            <input type="text" class="form-control" id="cc_name"  placeholder value required>
+            <small class="text-muted">Full name as displayed on card</small>
+            </div>
+            <div class="left_second">
+            <label for="cc_number" class="form-label">Credit card number</label>
+            <input type="text" class="form-control" id="cc_number" placeholder value required>
+            </div>
+          </div>
+
+
+          <div id="last_flex">
+            <div class="last_left_first">
+            <label for="expiration" class="form-label">Expiration</label>
+            <input type="text" class="form-control" id="expiration"  placeholder value required>
+            </div>
+            <div class="last_left_second">
+            <label for="cvc" class="form-label">CVC</label>
+            <input type="text" class="form-control" id="cvc" placeholder value required>
+            </div>
+          </div>
+          <hr></hr>
+          <button class="btn" type="submit">Continue to checkout</button>
+        </form>  
+        </div>
+
+        <div class="real_footer2"> 
+        <p class="mb-1">© 2017–2022 Company Name</p>
+        </div>
+
+        <div class="real_footer"> 
+          <ul class="list-inline">
+            <li class="list-inline-item" id="back"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="blue">
+          <div id="yourcart">
+            <span>Your Cart</span> 
+            <span class="number-circle">3</span>
+          </div>
+
+          <div class="small_container">
+
+            <div class="inner_container">
+            <div class="innter_contents">Product name <span class="cart">&nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp $12</span> </div>
+            <small class="brief_description">Brief description</small>
+            <hr class="cart_hr"></hr>
+            </div>
+
+            <div class="inner_container">  
+            <div class="innter_contents">Second product <span class="cart">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$8</span> </div>
+            <small class="brief_description">Brief description</small>
+            <hr class="cart_hr"></hr>
+            </div>
+
+            <div class="inner_container">  
+            <div class="innter_contents">Third item<span class="cart">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$5</span></div> 
+            <small class="brief_description">Brief description</small>
+            <hr class="cart_hr"></hr>
+            </div>
+
+            <div class="inner_container">
+            <div id="gray">
+            <div class="green innter_contents">Promo code<span class="green cart">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-$5</span></div>
+            <div class="green example_code" >EXAMPLE CODE</div>
+            <hr class="cart_hr"></hr>
+          </div>  
+            </div>
+
+            <div class="inner_container">   
+            <div class="innter_contents" id="text_align">Total (USD)<span class="cart">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp$20</span></div>
+            </div>
+
+            
+          </div>
+
+          <div class="gray" id="outer">
+            <div  id="inner">
+              <input type="text" class="form-control" id="promocode"  placeholder="Promo code">
+              <button id="redeem">Redeem</button>
+            </div>
+          </div>
+          
+      
+
+  </div>
+    </main>
+    
+      
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>

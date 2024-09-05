@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function check (){
+      let title = document.form1.title; // 그 자체만으로 객체가 됨
+      if(title.value == ''){
+        alert('제목을 입력해주세요.');
+        title.focus();
+        return false;
+      }
+
+      let uname = document.form1.username;
+      if(uname.value == ''){
+        alert('이름을 입력해주세요');
+        uname.focus();
+        return false;
+      }
+
+    }
+  </script>
+</head>
+<body>
+  <form name="form1">
+  제목 : <input type="text" name="title"><br>
+  이름 : <input type="text" name="username"><br>
+  내용 : <textarea cols="20" rows="5" name="contents"></textarea> <br>
+    <input type="submit" value="제출임" onclick=check()>
+  </form>
+</body>
+</html>

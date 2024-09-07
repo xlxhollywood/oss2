@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #add {
+      background-color: blue;
+      color: white;
+    }
+
+    #delete {
+      background-color: #307830;
+      color : white;
+    }
+
+    #enter {
+      background-color: skyblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Web page</h1>
+  <form>
+    <input type="text" id="enter">
+    <button id="add">추가</button>
+    <button id="delete">삭제</button>
+  </form>
+
+  <!-- 동적으로 li를 추가할 ul -->
+  <div>
+  <ul id="itemList"></ul>
+  </div>  
+</body>
+</html>
+<script>
+  let addButton = document.getElementById("add");
+  let inputField = document.getElementById("enter");
+  let itemList = document.getElementById("itemList");
+
+  
+    addButton.addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    
+    // 1. 입력한 값을 변수에 저장
+    let inputText = inputField.value;
+
+    // 2. 입력한 값을 콤마(,) 기준으로 나누어 배열로 변환
+    let items = inputText.split(',');
+
+    // 3. 각 배열의 요소(문자열)에서 공백을 제거
+    for (let i = 0; i < items.length; i++) {
+      items[i] = items[i].trim(); // 각 항목의 양쪽 공백을 제거
+    }
+
+
+    // 각 항목을 li로 만들어서 ul에 추가
+    items.forEach(function(item) {
+      if (item) { // 빈 문자열이 아닌 경우에만 추가
+        let newItem = document.createElement('li');
+        newItem.textContent = item;
+        itemList.appendChild(newItem);
+      }
+    });
+
+    // 입력 필드 초기화
+    inputField.value = '';
+  });
+</script>
